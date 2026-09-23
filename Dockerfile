@@ -23,8 +23,8 @@ RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 \
 
 FROM scratch
 
-COPY --from=builder --chmod=755 /supervisor /supervisor
-COPY --from=builder --chmod=755 /app /app
+COPY --from=builder /supervisor /supervisor
+COPY --from=builder /app /app
 
 EXPOSE 8080
 
