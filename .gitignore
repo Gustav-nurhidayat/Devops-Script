@@ -1,0 +1,15 @@
+# Go
+*.test
+*.out
+coverage.*
+
+# Build artifacts
+app
+app-*
+supervisor-test
+deploy/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
